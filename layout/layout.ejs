@@ -1,5 +1,5 @@
 <%- partial('_partial/head') %>
-<body>
+<body style="background-image:url(<%= url_for(config.widgets.author.bgpic) %>)">
     <%- partial('_partial/loading') %>
     <script>setLoadingBarProgress(20)</script>
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
